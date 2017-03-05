@@ -1,14 +1,15 @@
 {
-  "name": "nodewebsite",
-  "version": "1.0.0",
-  "description": "Anime characters database",
-  "main": "app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Mudrak Patel",
-  "license": "ISC",
-  "dependencies": {
-    "express": "^4.15.0"
-  }
+    "name": "nodewebsite",
+    "version": "1.0.0",
+    "description": "Anime characters database",
+    "main": "app.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "dev": "lite-server"
+    },
+    "author": "Mudrak Patel",
+    "license": "ISC",
+    "dependencies": {
+        "express": "^4.15.0"
+    }
 }
