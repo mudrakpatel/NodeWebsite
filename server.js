@@ -11,6 +11,7 @@ app.set('views', path.join(__dirname, 'public/Templates'));
 app.use(express.static("public"));
 app.use(express.static("public/Templates"));
 app.use(express.static("public/Content"));
+app.use(express.static("public/Scripts"));
 
 //server code
 app.get("/", function(request, response) {
