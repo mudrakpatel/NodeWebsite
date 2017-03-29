@@ -1,0 +1,31 @@
+// This file is used to store data about the anime characters
+{
+    "charactersArray": [{
+            "characterFirstName": "Naruto",
+            "characterLastName": "Uzumaki",
+            "characterGender": "Male",
+            "Height": 5.11,
+            "anime": [
+                "Naruto", "Naruto Shipudden"
+            ]
+        },
+        {
+            "characterFirstName": "Ichigo",
+            "characterLastName": "Kurosaki",
+            "characterGender": "Male",
+            "Height": 5.11,
+            "anime": [
+                "Bleach"
+            ]
+        },
+        {
+            "characterFirstName": "Luffy",
+            "characterLastName": "Monke D.",
+            "characterGender": "Male",
+            "Height": 5.8,
+            "anime": [
+                "One Piece"
+            ]
+        }
+    ]
+}
