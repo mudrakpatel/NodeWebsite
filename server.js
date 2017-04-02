@@ -13,9 +13,13 @@ app.use(express.static("public/Templates"));
 app.use(express.static("public/Content"));
 app.use(express.static("public/Scripts"));
 
-//server code
-app.get("/", function(request, response) {
+//routing code for different routes
+app.all("/", function(request, response) {
     response.render("index.ejs");
+});
+
+app.get("characters", function(request, response) {
+    response.render("characters.ejs");
 });
 
 //specify a port number to listen for server
