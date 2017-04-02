@@ -18,10 +18,6 @@ app.all("/", function(request, response) {
     response.render("index.ejs");
 });
 
-app.get("characters", function(request, response) {
-    response.render("characters.ejs");
-});
-
 //specify a port number to listen for server
 app.listen(3000);
 //log the server status to the console
