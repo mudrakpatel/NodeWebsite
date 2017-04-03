@@ -3,6 +3,7 @@
 var express = require("express");
 var path = require("path");
 var app = express(); //express constructor function
+
 app.set('view engine', 'ejs');
 //set Templates directory as views folder for ejs view engine
 app.set('views', path.join(__dirname, 'public/Templates'));
@@ -12,11 +13,7 @@ app.use(express.static("public"));
 app.use(express.static("public/Templates"));
 app.use(express.static("public/Content"));
 app.use(express.static("public/Scripts"));
-
-//routing code for different routes
-app.all("/", function(request, response) {
-    response.render("index.ejs");
-});
+app.use(require("./public/Routes/index"));
 
 //specify a port number to listen for server
 app.listen(3000);
