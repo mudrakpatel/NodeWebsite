@@ -9,10 +9,10 @@ app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'public/Templates'));
 
 //Code to use static files
-app.use(express.static("public"));
-app.use(express.static("public/Templates"));
-app.use(express.static("public/Content"));
-app.use(express.static("public/Scripts"));
+app.use(express.static("./public"));
+// app.use(express.static("public/Templates"));
+// app.use(express.static("public/Content"));
+// app.use(express.static("public/Scripts"));
 app.use(require("./public/Routes/index"));
 
 //specify a port number to listen for server

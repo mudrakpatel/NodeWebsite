@@ -82,3 +82,11 @@ body {
         text-align: left;
     }
 }
+
+
+/*characters.ejs styles go here*/
+
+#homeDiv h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
