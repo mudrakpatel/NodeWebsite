@@ -62,6 +62,11 @@ body {
         float: right;
         display: block;
     }
+    #container h1 {
+        display: inline-block;
+        -webkit-margin-top-collapse: separate;
+        margin-top: 25px;
+    }
 }
 
 
@@ -86,8 +91,15 @@ body {
 
 /*characters.ejs styles go here*/
 
-#homeDiv h1 {
-    display: inline-block;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+#container {
+    position: relative;
+    display: block;
+    margin-top: 25px;
+}
+
+#container h1 {
     color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    -webkit-margin-top-collapse: separate;
+    display: inline-block;
 }
