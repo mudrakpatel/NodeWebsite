@@ -90,7 +90,7 @@
     }
     /*character.ejs styles goes here*/
     
-    q div.imageContent {
+    div.imageContent {
         width: 100%;
         height: 500px;
         /*position: fixed;*/
