@@ -12,6 +12,7 @@ app.set('views', path.join(__dirname, 'public/Templates'));
 app.use(express.static("./public"));
 app.use(require("./public/Routes/index"));
 app.use(require("./public/Routes/characters"));
+app.use(require("./public/Routes/character"));
 
 //specify a port number to listen for server
 app.listen(3000);

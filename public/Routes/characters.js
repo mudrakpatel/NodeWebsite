@@ -1,8 +1,8 @@
 var express = require("express");
 var router = express.Router();
 
-router.get("/characters.ejs", function(request, response) {
-    response.render("characters.ejs");
+router.get("/character.ejs", function(request, response) {
+    response.render("character.ejs");
 });
 
 module.exports = router;

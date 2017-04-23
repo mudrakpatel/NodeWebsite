@@ -103,3 +103,15 @@ body {
     -webkit-margin-top-collapse: separate;
     display: inline-block;
 }
+
+
+/*character.ejs styles goes here*/
+
+div.header {
+    height: 100px;
+    background-color: gray;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 52px;
+    width: auto;
+}
