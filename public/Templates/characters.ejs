@@ -6,13 +6,6 @@
  <div id="container">
      <h1>This is H1 inside a div</h1>
      <div class="linksDiv">
-        <% for(var index = 0; index < appData.charactersArray.length; index++){ %>
-            <div class="characterLink">
-                <a href='character.ejs/<%= appData.charactersArray[index] %>'>
-                <%= appData.charactersArray[index].characterFirstName %>
-                </a>
-            </div>
-        <% } %>
      </div>
  </div>
 </body>

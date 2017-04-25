@@ -8,8 +8,7 @@ app.set('view engine', 'ejs');
 //set Templates directory as views folder for ejs view engine
 app.set('views', path.join(__dirname, 'public/Templates'));
 //Importing data from model.json file
-var data = require("./public/model.json");
-app.locals.appData = data;
+//app.locals.appData = require("./public/model.json");
 //Code to use static files and Routes folder contents
 app.use(express.static("./public"));
 app.use(require("./public/Routes/index"));
