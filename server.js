@@ -5,7 +5,7 @@ var path = require("path");
 var app = express(); //express constructor function
 
 //Importing data from model.json file
-app.locals.characterData = require("./model.json").charactersArray;
+app.locals.characterData = require("./public/model.json");
 
 app.set('view engine', 'ejs');
 //set Templates directory as views folder for ejs view engine
