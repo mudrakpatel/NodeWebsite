@@ -4,11 +4,13 @@ var express = require("express");
 var path = require("path");
 var app = express(); //express constructor function
 
+//Importing data from model.json file
+app.locals.characterData = require("./model.json").charactersArray;
+
 app.set('view engine', 'ejs');
 //set Templates directory as views folder for ejs view engine
 app.set('views', path.join(__dirname, 'public/Templates'));
-//Importing data from model.json file
-//app.locals.appData = require("./public/model.json");
+
 //Code to use static files and Routes folder contents
 app.use(express.static("./public"));
 app.use(require("./public/Routes/index"));
