@@ -1,17 +1,19 @@
 {
     "charactersArray": [{
-        "characterFirstName": "Naruto",
+        "characterID": 0,
         "characterLastName": "Uzumaki",
         "characterGender": "Male",
         "Height": 5.11,
         "anime": ["Naruto", "Naruto Shipudden"]
     }, {
+        "characterID": 1,
         "characterFirstName": "Ichigo",
         "characterLastName": "Kurosaki",
         "characterGender": "Male",
         "Height": 5.11,
         "anime": ["Bleach"]
     }, {
+        "characterID": 2,
         "characterFirstName": "Luffy",
         "characterLastName": "Monke D.",
         "characterGender": "Male",
