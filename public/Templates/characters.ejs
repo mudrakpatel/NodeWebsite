@@ -1,14 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<% include header.ejs %>
-<body>
-<% include navbar.ejs %>
- <div id="container">
-     <h1>This is H1 inside a div</h1>
-     <div class="linksDiv">
-     </div>
- </div>
-</body>
+    <% include header.ejs %>
+    <body>
+    <% include navbar.ejs %>
+        <div id="container">
+            <h1>This is H1 inside a div</h1>
+                <div class="linksDiv">
+                    <ul id="characterList">
+                        <% characterData.charactersArray.forEach(function(character){ %>
+                            <li>
+                                <a href="character.ejs/<%= character.characterID %>">
+                                <%= character.characterFirstName %> <%= character.characterLastName %>
+                                </a>
+                            </li>
+                        <% }); %>
+                    </ul>
+                </div>
+        </div>
+    </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="../Scripts/navbar.js"></script>
 </html>

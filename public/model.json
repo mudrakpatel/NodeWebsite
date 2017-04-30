@@ -1,6 +1,7 @@
 {
     "charactersArray": [{
         "characterID": 0,
+        "characterFirstName": "Naruto",
         "characterLastName": "Uzumaki",
         "characterGender": "Male",
         "Height": 5.11,

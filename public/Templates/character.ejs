@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-<% include header.ejs %>
-<body>
-<% include navbar.ejs %>
- <div id="container">
-     <div class="imageContent">
-        <h1>Character image goes here...</h1>
-     </div> 
-     <div class="characterInfoContent">
-        <h1>Character info goes here...</h1><br>
-        <h1><%= routeCharacter.characterFirstName %></h1>
-     </div>
- </div>
-</body>
+    <% include header.ejs %>
+    <body>
+        <% include navbar.ejs %>
+        <div id="container">
+            <div class="imageContent">
+                <h1>Character image goes here...</h1>
+            </div> 
+            <div class="characterInfoContent">
+                <h1><%= tempCharacter.characterFirstName %> 
+                <%= tempCharacter.characterLastName %></h1>
+            </div>
+        </div>
+    </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="../Scripts/navbar.js"></script>
 </html>
