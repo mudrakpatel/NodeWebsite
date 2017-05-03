@@ -6,7 +6,8 @@
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "dev": "",
-        "start": "nodemon -e css,ejs,js,json server.js --watch public"
+        "start": "node server.js"
+            // "start": "nodemon -e css,ejs,js,json server.js --watch public"
     },
     "author": "Mudrak Patel",
     "license": "MIT",
