@@ -8,10 +8,13 @@
                 <div class="linksDiv">
                     <ul id="characterList">
                         <% characterData.charactersArray.forEach(function(character){ %>
-                            <li>
+                            <!--<li>
                                 <a href="character.ejs/<%= character.characterID %>">
                                 <%= character.characterFirstName %> <%= character.characterLastName %>
                                 </a>
+                            </li>-->
+                            <li>
+                                <div class="characterCardDiv"></div>
                             </li>
                         <% }); %>
                     </ul>
