@@ -4,8 +4,8 @@
     <body>
         <% include navbar.ejs %>
         <div id="container">
-            <div class="imageContent">
-                <h1>Character image goes here...</h1>
+            <div class="imageContent" style="background-image:<%= tempCharacter.characterPageImageLocation %>;
+             background-repeat: no-repeat;">
             </div> 
             <div class="characterInfoContent">
                 <h1><%= tempCharacter.characterFirstName %> 
