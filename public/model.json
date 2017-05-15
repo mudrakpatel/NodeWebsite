@@ -5,20 +5,23 @@
         "characterLastName": "Uzumaki",
         "characterGender": "Male",
         "Height": 5.11,
-        "anime": ["Naruto", "Naruto Shipudden"]
+        "anime": ["Naruto", "Naruto Shipudden"],
+        "cardImageLocation": "url(./Assets/Images/narutoUzumakiCard.jpg);"
     }, {
         "characterID": 1,
         "characterFirstName": "Ichigo",
         "characterLastName": "Kurosaki",
         "characterGender": "Male",
         "Height": 5.11,
-        "anime": ["Bleach"]
+        "anime": ["Bleach"],
+        "cardImageLocation": "url(./Assets/Images/ichigoKurosakiCard.jpg);"
     }, {
         "characterID": 2,
         "characterFirstName": "Luffy",
         "characterLastName": "Monkey D.",
         "characterGender": "Male",
         "Height": 5.8,
-        "anime": ["One Piece"]
+        "anime": ["One Piece"],
+        "cardImageLocation": "url(./Assets/Images/luffyMonkeyDCard.jpg);"
     }]
 }
