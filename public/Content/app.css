@@ -126,6 +126,7 @@ body {
     float: left;
     text-align: center;
     position: relative;
+    border-radius: 5px;
 }
 
 #container .linksDiv #characterList li a div.characterCardDiv div.characterText {
