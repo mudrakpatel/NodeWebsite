@@ -1,4 +1,4 @@
-    body {
+body {
         background-color: black;
         padding: 0;
         margin: 0;
@@ -88,17 +88,34 @@
         -webkit-margin-top-collapse: separate;
         display: inline-block;
     }
-    /*character.ejs styles goes here*/
-    
-    div.imageContent {
-        width: 100%;
-        height: 500px;
-        /*position: fixed;*/
+    #container .linksDiv #characterList {
+        list-style: none;
     }
-    /*characterInfoContent Div styles go here*/
     
-    div.characterInfoContent {
-        height: 1020px;
-        width: 100%;
-        position: relative;
-    }
+    #container .linksDiv #characterList li a div.characterCardDiv {
+        display: inline-block;
+        height: 250px;
+        width: 150px;
+        border: 5px solid white;
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 15px;
+        /*margin-left: 100px;*/
+    
+    margin-right: 10px;
+    float: left;
+}
+
+/*character.ejs styles goes here*/
+div.imageContent {
+    width: 100%;
+    height: 500px;
+    /*position: fixed;*/
+}
+
+/*characterInfoContent Div styles go here*/
+div.characterInfoContent {
+    height: 1020px;
+    width: 100%;
+    position: relative;
+}
