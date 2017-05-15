@@ -105,6 +105,8 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     -webkit-margin-top-collapse: separate;
     display: inline-block;
+    position: relative;
+    margin-left: 35px;
 }
 
 #container .linksDiv #characterList {

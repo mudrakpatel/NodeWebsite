@@ -4,13 +4,10 @@
     <body>
     <% include navbar.ejs %>
         <div id="container">
-            <h1>This is H1 inside a div</h1>
+            <h1>Characters list</h1>
                 <div class="linksDiv">
                     <ul id="characterList">
                         <% characterData.charactersArray.forEach(function(character){ %>
-                            <!--<li>               
-                                <%= character.characterFirstName %> <%= character.characterLastName %>   
-                            </li>-->
                             <li>
                                 <a href="character.ejs/<%= character.characterID %>">
                                     <div class="characterCardDiv" style="background-image:<%= character.cardImageLocation %>">      
