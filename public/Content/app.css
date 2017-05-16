@@ -1,7 +1,37 @@
+/* fonts and other imports */
+
+/**************************************************************************/
+
 body {
     background-color: black;
     padding: 0;
     margin: 0;
+}
+
+
+/* index.ejs styles go here */
+
+div#homeDiv {
+    background-image: url(../Assets/Images/homePageWallpaper2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding-top: 20%;
+    padding-bottom: 23%;
+    margin-top: 50px;
+}
+
+div#homeDiv h1 {
+    color: white;
+    font-family: 'Dosis', Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 100px;
+    z-index: 9;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    left: 50%;
+    right: 50%;
+    text-align: left;
 }
 
 
@@ -55,7 +85,9 @@ body {
 /* Media queries for the responsive navbar*/
 
 
-/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+/* When the screen is less than 600 pixels wide, hide all links, 
+except for the first one ("Home"). Show the link that contains 
+should open and close the topnav (.icon) */
 
 @media screen and (max-width: 600px) {
     .topnav a:not(:first-child) {
@@ -103,10 +135,13 @@ This class makes the topnav look good on small screens
         border-radius: 10px 10px 10px 10px;
         position: relative;
         height: 250px;
-        margin-top:55px;
+        margin-top: 55px;
     }
     div.characterInfoContent table {
         display: inline-block;
+    }
+    div#homeDiv h1{
+        font-size: 35px;
     }
 }
 
