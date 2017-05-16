@@ -11,8 +11,31 @@
                 style="display:block;margin-left:auto;margin-right:auto;"/>
             </div> 
             <div class="characterInfoContent">
-                <h1><%= tempCharacter.characterFirstName %> 
-                <%= tempCharacter.characterLastName %></h1>
+                <table>
+                    <tr>
+                        <td>First name: </td>
+                        <td>&nbsp;<%= tempCharacter.characterFirstName %></td>
+                    </tr>
+                    <tr>
+                        <td>Last name: </td>
+                        <td>&nbsp;<%= tempCharacter.characterLastName %></td>
+                    </tr>
+                    <tr>
+                        <td>Gender: </td>
+                        <td>&nbsp;<%= tempCharacter.characterGender %></td>
+                    </tr>
+                    <tr>
+                        <td>Height: </td>
+                        <td>&nbsp;<%= tempCharacter.Height %></td>
+                    </tr>
+                    <tr>
+                      <td>Shows: </td>
+                        <% tempCharacter.anime.forEach(function(show){ %>
+                            <td style="display:inline-block;"><%= show %></td>
+                        <% }); %>
+                    </tr>
+                </table>
+                
             </div>
         </div>
     </body>
