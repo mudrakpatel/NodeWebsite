@@ -1,5 +1,6 @@
 /* fonts and other imports */
 
+
 /**************************************************************************/
 
 body {
@@ -19,8 +20,28 @@ div#homeDiv {
     padding-top: 20%;
     padding-bottom: 23%;
     margin-top: 50px;
+    background-attachment: fixed;
 }
+
+div#homeDiv2 {
+    background-image: url(../Assets/Images/homePageWallpaper1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding-top: 20%;
+    padding-bottom: 23%;
+    /*margin-top: 2px;*/
+    /*background-attachment: fixed;
+    background-position-x: center;
+    background-position-y: 40px;*/
+    background-attachment: fixed;
+    background-position-y: -20%;
+}
+
+
 /* Navbar styles go here */
+
+
 /* Add a black background color to the top navigation */
 
 .topnav {
@@ -123,8 +144,35 @@ This class makes the topnav look good on small screens
     div.characterInfoContent table {
         display: inline-block;
     }
-    div#homeDiv h1{
+    div#homeDiv h1 {
         font-size: 35px;
+    }
+    div#homeDiv {
+        background-attachment: scroll;
+    }
+    div#homeDiv2 {
+        background-attachment: scroll;
+        background-position-y: 0px;
+    }
+}
+/* media queries for parallax scrolling
+   on index.ejs between 600px and 900px */
+@media (min-width: 600px) and (max-width:900px) {
+    div#homeDiv {
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 100%;
+        margin-top: 50px;
+        background-attachment: fixed;
+    }
+    div#homeDiv2 {
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 100%;
+        background-attachment: fixed;
+        background-position-x: center;
+        padding-top: 33%;
+        background-position-y: bottom;
     }
 }
 
