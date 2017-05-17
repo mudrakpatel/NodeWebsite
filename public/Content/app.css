@@ -12,7 +12,7 @@ body {
 /* index.ejs styles go here */
 
 div#homeDiv {
-    background-image: url(../Assets/Images/homePageWallpaper2.jpg);
+    background-image: url(../Assets/Images/homePageWallpaper.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -20,24 +20,7 @@ div#homeDiv {
     padding-bottom: 23%;
     margin-top: 50px;
 }
-
-div#homeDiv h1 {
-    color: white;
-    font-family: 'Dosis', Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 100px;
-    z-index: 9;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    left: 50%;
-    right: 50%;
-    text-align: left;
-}
-
-
 /* Navbar styles go here */
-
-
 /* Add a black background color to the top navigation */
 
 .topnav {
