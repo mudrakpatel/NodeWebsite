@@ -175,6 +175,29 @@ This class makes the topnav look good on small screens
         background-position-y: bottom;
     }
 }
+/* media queries for parallax scrolling
+   on index.ejs between 900px 1350px */
+@media (min-width: 900px) and (max-width:1350px) {
+    div#homeDiv {
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        margin-top: 50px;
+        padding-top:50%;
+        background-attachment: fixed;
+        background-position-x: center;
+    }
+    div#homeDiv2 {
+        background-color: white;
+        background-size: 850px;
+        background-repeat: no-repeat;
+        width: 100%;
+        background-attachment: fixed;
+        background-position-x: center;
+        padding-top: 30%;
+        background-position-y: bottom;
+    }
+}
 
 
 /*characters.ejs styles go here*/
