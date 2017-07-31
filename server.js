@@ -14,9 +14,11 @@ app.set("port", process.env.PORT || 3000);
 
 //Code to use static files and Routes folder contents
 app.use(express.static("./public"));
+app.use(require("./public/Routes"));
 app.use(require("./public/Routes/index"));
 app.use(require("./public/Routes/characters"));
 app.use(require("./public/Routes/character"));
+app.use(require("./public/Routes/contact"));
 
 //specify a port number to listen for server
 app.listen(app.get("port"));
