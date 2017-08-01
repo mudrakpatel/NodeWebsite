@@ -1,10 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <% include header.ejs %>
+    <style>
+        div.contactDiv{
+            margin-left:auto;
+            margin-right:auto;
+            color:white;
+            font-family:verdana,arial,tahoma,sans-serif;
+            display:block;
+        }
+        div.contactDiv > div#emailBodyDiv{
+            margin-left:auto;
+            margin-right:auto;
+            margin-top:10%;
+            display:block;
+        }
+    </style>
 <body>
 <% include navbar.ejs %>
     <div class="contactDiv">
-        
+        <div id="fromDiv">
+            <span id="fromSpan">From: </span><input type="text" id="fromInput"/>
+        </div>
+        <div id="subjectDiv">
+            <span id="subjectSpan">Subject: </span><input type="text" id="subjectInput"/>
+        </div>
+        <div id="emailBodyDiv">
+            <span id="bodySpan">Body: </span><textarea rows="4" cols="100">Your message here!</textarea>
+        </div>
     </div>
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
