@@ -1,5 +1,6 @@
 //nodemailer and xoauth2 imports
-var nodemailer = require("nodemailer");
+// var nodemailer = require("nodemailer");
+import * as nodemailer from "../node_modules/nodemailer";
 //var xoauth2 = require("xoauth2");
 //other variables
 var userEmail = document.getElementById("fromTextBox");
@@ -33,5 +34,28 @@ transporter.sendMail(mailOptions, function(error, response) {
         alert("ERROR Ocurred!\n" + error);
     } else{
         console.log("Email sent successfully!");
+    }
+});
+
+//Event listener code for sendButtonDiv click event
+var sendButtonDiv = document.getElementById("sendButtonDiv");
+sendButtonDiv.addEventListener("click", function(event){
+    //check if body of email is empty
+    if(document.getElementById("emailBodyTextArea").innerText !== null){
+        //check if the user entered a valid email ID or not
+        //first check for "@" sign
+        if(userEmail.innerText.includes("@")){
+           //then check for "." symbol 
+           if(userEmail.innerText.includes(".")){
+            //then check for ".com", ".in", ".live" and other major domains
+             if(userEmail.innerText.includes(".com") ||
+                userEmail.innerText.includes(".in") ||
+                userEmail.innerText.includes(".ca")){
+
+             }
+           }   
+        }
+    } else{
+
     }
 });
